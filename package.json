@@ -1,0 +1,19 @@
+{
+  "name": "gig-starter-front-twig",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigigo-html5/gig-starter-front-twig.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gigigo-html5/gig-starter-front-twig/issues"
+  },
+  "homepage": "https://github.com/gigigo-html5/gig-starter-front-twig#readme"
+}
