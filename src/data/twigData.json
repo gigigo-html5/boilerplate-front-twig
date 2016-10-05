@@ -1,0 +1,13 @@
+{
+    "largeImage" : "https://s3-eu-west-1.amazonaws.com/stream-public-dev/foto-header.png",
+    "smallImage" : "https://s3-eu-west-1.amazonaws.com/stream-public-dev/foto-header%402x.png",
+    "googleTrackId" : "",
+    "title": "Example Title",
+    "text" : "It´s very easy, only three questions! You only have to answers the next question. When you finish, press “Send”. You will know if you win instantly.",
+    "translations" : {
+        "Private Policy" :  "Private Policy",
+        "ERROR" : "An unknown error has occurred",
+        "CHECK" : "CHECK",
+        "OK" : "OK"
+    }
+}

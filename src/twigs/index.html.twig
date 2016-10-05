@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div data-page>
+
+        <div class="promo-template">
+            <header>
+                <span data-image-preload="{{largeImage}}"></span>
+            </header>
+
+            <div class="container">
+                <h2>{{ title }}</h2>
+
+                <p class="text">{{ text | raw }}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {{ parent() }}
+
+{% endblock %}
