@@ -1,19 +1,68 @@
 {
   "name": "gig-starter-front-twig",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "gulp start-dev"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gigigo-html5/gig-starter-front-twig.git"
   },
-  "author": "",
+  "homepage": "https://github.com/gigigo-html5/gig-starter-front-twig#readme",
+  "author": "Francisco Jiménez <francisco.jimenez@gigigo.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gigigo-html5/gig-starter-front-twig/issues"
   },
-  "homepage": "https://github.com/gigigo-html5/gig-starter-front-twig#readme"
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.14.0",
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-twig": "^0.5.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "replace": "^0.3.0",
+    "run-sequence": "^1.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jquery": "^3.1.0"
+  },
+  "optionalDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-ng-constant": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "stream-combiner2": "^1.1.1"
+  }
 }

@@ -1,0 +1,25 @@
+
+# /IDEs
+TextMate2
+.buildpath
+.project
+.settings
+nbproject
+.idea
+.tm_properties
+*.sublime-projectgul
+*.sublime-workspace
+*~
+
+# Vagrant file
+/vagrant/.vagrant/
+
+!.gitkeep
+!.gitignore
+
+node_modules/
+npm-debug.log
+www/
+parameters.json
+
+/.project
