@@ -1,13 +1,29 @@
 {
-    "largeImage" : "https://s3-eu-west-1.amazonaws.com/stream-public-dev/foto-header.png",
-    "smallImage" : "https://s3-eu-west-1.amazonaws.com/stream-public-dev/foto-header%402x.png",
-    "googleTrackId" : "",
-    "title": "Example Title",
-    "text" : "It´s very easy, only three questions! You only have to answers the next question. When you finish, press “Send”. You will know if you win instantly.",
+    "largeImage" : "http://erolgunaydin.com/uploads/images/headerBackground.png",
+    "title": "Starter kit by front-twig projects",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "users": [
+        {
+            "firstName": "Yehuda",
+            "lastName": "Katz"
+        },
+        {
+            "firstName": "Carl",
+            "lastName": "Lerche"
+        },
+        {
+            "firstName": "Alan",
+            "lastName": "Johnson"
+        },
+        {
+            "firstName": "Laura",
+            "lastName": "Díaz"
+        }
+    ],
     "translations" : {
+        "users" : "users",
         "Private Policy" :  "Private Policy",
         "ERROR" : "An unknown error has occurred",
-        "CHECK" : "CHECK",
         "OK" : "OK"
     }
 }

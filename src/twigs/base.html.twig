@@ -1,35 +1,43 @@
 {# base.html.twig #}
 <html>
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>gig-starter-front-twig</title>
-        {% block stylesheets %}
-            <link rel="stylesheet" href="assets/css/general.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        {% endblock %}
+        {# -- HEAD block -- #}
+        {% block head %}
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+            <title>gig-starter-front-twig3</title>
 
-        {% block javascripts %}
-            <!-- Google Fonts embed code -->
-            <script type="text/javascript">
-                (function() {
-                    var link_element = document.createElement("link"),
-                        s = document.getElementsByTagName("script")[0];
-                    if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
-                        link_element.href = "http:";
-                    }
-                    link_element.href += "//fonts.googleapis.com/css?family=Montserrat:400,700";
-                    link_element.rel = "stylesheet";
-                    link_element.type = "text/css";
-                    s.parentNode.insertBefore(link_element, s);
-                })();
-            </script>
+            {% block stylesheets %}
+                <link rel="stylesheet" href="assets/css/bundle.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+            {% endblock %}
+
+            {% block javascripts %}
+                <!-- Google Fonts embed code -->
+                <script type="text/javascript">
+                    (function() {
+                        var link_element = document.createElement("link"),
+                            s = document.getElementsByTagName("script")[0];
+                        if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+                            link_element.href = "http:";
+                        }
+                        link_element.href += "//fonts.googleapis.com/css?family=Montserrat:400,700";
+                        link_element.rel = "stylesheet";
+                        link_element.type = "text/css";
+                        s.parentNode.insertBefore(link_element, s);
+                    })();
+                </script>
+            {% endblock %}
+
         {% endblock %}
+        {# -- HEAD block end -- #}
     </head>
+
     <body>
         {% block body %}
 
             <!-- Templates -->
+            {# note: The verbatim tag works in the exact same way as the old raw tag #}
             {% verbatim %}
 
                 <script id="example-template" type="text/x-handlebars-template">
@@ -40,7 +48,7 @@
             <!-- /Templates -->
 
             <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-            <script src="assets/js/build.js"></script>
+            <script src="assets/js/bundle.js"></script>
 
         {% endblock %}
 

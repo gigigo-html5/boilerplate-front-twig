@@ -3,20 +3,39 @@
 {% block body %}
     <div data-page>
 
-        <div class="promo-template">
+        <div class="example-template">
             <header>
-                <span data-image-preload="{{largeImage}}"></span>
+                {% block header %}
+                    <span data-image-preload="{{largeImage}}"></span>
+                {% endblock %}
             </header>
 
             <div class="container">
-                <h2>{{ title }}</h2>
+                <h3>{{ title }}</h3>
 
                 <p class="text">{{ text | raw }}</p>
 
+                <div>
+                    <h5>Example loop in twig</h5>
+                    {% if users|length > 0 %}
+                        <h6>Users</h6>
+                        <ol>
+                            {% for user in users %}
+                                <li> {{ user.lastName}}, {{ user.firstName }} </li>
+                            {% endfor %}
+                        </ol>
+                    {% endif %}
+                </div>
+
+                <div>
+                    <h5>Filters example</h5>
+                    <p>
+                        Welcome {{ users[0].firstName | upper }}
+                    </p>
+                </div>
+
             </div>
-
         </div>
-
     </div>
 
     {{ parent() }}
