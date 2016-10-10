@@ -2,6 +2,7 @@
 
 A HTML5 project structure for projects containing Twig.
 Converts Twig files into html files.
+Moreover generation html blocks by Handlebars
 
 ## Prerequisites
 

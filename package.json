@@ -27,7 +27,6 @@
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
-    "gulp-data": "^1.2.1",
     "gulp-ext-replace": "^0.3.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.1",
