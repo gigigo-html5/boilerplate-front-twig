@@ -13,5 +13,5 @@ gulp.task('start-dev', ['build'], function(done) {
 });
 
 gulp.task('build', ['clean'], function(done) {
-    runSequence(['images', 'sass', 'twig'], ['bundle'], done)
+    runSequence(['clean-html', 'twig', 'images', 'sass', 'html'], ['bundle'], done)
 });
