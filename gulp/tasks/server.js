@@ -13,12 +13,10 @@ gulp.task('server', ['watch'], function() {
         }
     });
 
-    gulp.watch(config.paths.src+'/*.html', ['copy-html']).on('change', browserSync.reload);
-    gulp.watch(config.paths.src+'/assets/sass/*.scss', ['sass', 'copy-images']).on('change', browserSync.reload);
+    gulp.watch(config.paths.src+'/assets/scss/*.scss', ['sass', 'images']).on('change', browserSync.reload);
     gulp.watch(config.paths.src+'/assets/img/*', ['copy-images']).on('change', browserSync.reload);
-    gulp.watch(config.paths.src+'/assets/js/*.js', ['scripts']).on('change', browserSync.reload);
-    gulp.watch(config.paths.src+'/assets/js/*.js', ['scripts']).on('change', browserSync.reload);
-    gulp.watch(config.paths.src+'/twigs/*.twig', ['twig']).on('change', browserSync.reload);
-    gulp.watch(config.paths.src+'/data/*.json', ['twig']).on('change', browserSync.reload);
+    gulp.watch(config.paths.src+'/assets/js/*.js', ['bundle']).on('change', browserSync.reload);
+    gulp.watch(config.paths.src+'/twigs/*.twig', ['twig', 'html']).on('change', browserSync.reload);
+    //gulp.watch(config.paths.src+'/data/*.json', ['build']).on('change', browserSync.reload);
     gulp.watch(config.paths.dist+'/*').on('change', browserSync.reload);
 });
