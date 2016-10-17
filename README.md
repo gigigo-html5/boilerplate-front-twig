@@ -1,8 +1,12 @@
-## Starter Kit with components for php-twig projects
+# Starter Kit to build JS ES6 project with components for php-twig projects
 
 A HTML5 project structure for projects containing Twig.
 Converts Twig files into html files.
-Moreover generation html blocks by Handlebars
+Moreover generation html blocks by Handlebars.
+
+## Introduction
+
+Javascript 2015/ES6 introduces a lot of new cool features. This starter kit contains all the tools you need to let you run your ES6 code on any php-twig project.
 
 ## Prerequisites
 
