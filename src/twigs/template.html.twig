@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <div data-page></div>
+
+    <script id="example-template" type="text/x-handlebars-template">
+
+        <div class="container">
+
+            <h2>{{ title }}</h2>
+
+            <div class="example-contain">
+
+                {{ text }}
+
+            </div>
+
+        </div>
+
+    </script>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    {{ parent() }}
+
+{% endblock %}

@@ -16,7 +16,7 @@ gulp.task('twig', ['clean-html'], function(done) {
             data: config.paths.twigData
         }))
         .pipe(ext_replace('', '.html'))
-        .pipe(gulp.dest(config.paths.src))
+        //.pipe(gulp.dest(config.paths.src))
         .pipe(gulp.dest(config.paths.dist))
         .on('error', function(error) {
             console.log(error);

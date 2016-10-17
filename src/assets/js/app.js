@@ -4,13 +4,15 @@ import Components from './components';
 
 $(function() {
     Images.load();
+    // By Handlebars templates
+    exampleActions.pageOpen('example');
 });
 
 window.exampleActions = {
 
     refreshPage: function() {
         Images.load();
-        Components.load();
+        //Components.load();
     },
 
     pageOpen: function(template, data) {

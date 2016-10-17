@@ -11,13 +11,14 @@ class Page {
         let source = $('#'+templateName+'-template').html();
         let template = Handlebars.compile(source);
 
-        data.exampleContent = window.exampleContent;
-
         let tmpHTML = template(data);
         this.pageObject.html(tmpHTML);
+
+        $('#'+templateName+'-template').remove();
+
         exampleActions.refreshPage();
     }
-    
+
 }
 
 export default new Page();
