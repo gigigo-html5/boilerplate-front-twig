@@ -3,10 +3,15 @@
 {% block body %}
 
     <div class="template">
+
         <header>
+
             {% block header %}
+                {{ menu() }}
                 <span data-image-preload="{{largeImage}}"></span>
             {% endblock %}
+
+
         </header>
 
         <div class="container">
@@ -15,9 +20,12 @@
             <p class="text">{{ text | raw }}</p>
 
             <div>
+                {# Show info about variables data #}
+                {# {{ dump(users)}} #}
+
                 <h5>Example loop in twig</h5>
                 {% if users|length > 0 %}
-                    <h6>Users</h6>
+                    <h6>Users:</h6>
                     <ol>
                         {% for user in users %}
                             <li> {{ user.lastName}}, {{ user.firstName }} </li>
@@ -28,12 +36,16 @@
 
             <div>
                 <h5>Filters example</h5>
-                <p>
-                    Welcome {{ users[0].firstName | upper }}
-                </p>
+                <p>Welcome {{ 'Custom filter' | customFilter }}</p>
+            </div>
+
+            <div>
+                <h5>Functions example</h5>
+                <p>{{ customFunction('Hello') }}</p>
             </div>
 
         </div>
+
     </div>
 
     {{ parent() }}
