@@ -2,7 +2,7 @@
 
 A HTML5 project structure for projects containing Twig.
 Converts Twig files into html files.
-Moreover generation html blocks by Handlebars.
+Moreover, generation html blocks by Handlebars.
 
 ## Introduction
 
@@ -18,9 +18,9 @@ You can get them from [http://nodejs.org/](http://nodejs.org/).
 
 ## Install
 
-`git clone git@github.com:gigigo-html5/gig-starter-front-twig.git'
+`git clone git@github.com:gigigo-html5/gig-starter-front-twig.git`
 
-cd gig-starter-angular1-kit
+`cd gig-starter-angular1-kit`
 
 `npm install`
 
@@ -31,3 +31,10 @@ To start the project
 ```sh
 npm run start-dev
 ```
+## Contributors
+
+Gigigo HTML5 Team
+
+## License
+
+MIT
